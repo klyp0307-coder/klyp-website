@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KLYP is a Montreal-based booking platform connecting clients with barbers and grooming professionals.">
+  <title>KLYP | Book Your Next Cut</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 4px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .tag {
+      color: #aaa;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 90px);
+      line-height: 1.05;
+      max-width: 950px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 19px;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .coming {
+      border: 1px solid #444;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    section {
+      padding: 100px 10%;
+      border-top: 1px solid #1d1d1d;
+    }
+
+    section h2 {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+
+    section p {
+      max-width: 760px;
+      color: #aaa;
+      font-size: 17px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 45px;
+    }
+
+    .feature {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 15px;
+      padding: 35px;
+    }
+
+    .feature h3 {
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .feature p {
+      font-size: 15px;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 35px 10%;
+      color: #666;
+      border-top: 1px solid #1d1d1d;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      nav .links {
+        display: none;
+      }
+
+      section {
+        padding: 70px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">KLYP</div>
+
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#features">Platform</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="tag">MONTREAL · COMING SOON</div>
+
+      <h1>Your next cut, one tap away.</h1>
+
+      <p>
+        KLYP is a booking platform connecting clients with barbers
+        and grooming professionals. Discover services, book appointments
+        and manage your bookings from one place.
+      </p>
+
+      <div class="coming">COMING SOON TO MONTREAL</div>
+    </div>
+
+    <section id="about">
+      <h2>About KLYP</h2>
+
+      <p>
+        KLYP is a Montreal-based technology platform designed to make
+        booking grooming services simple and convenient. Our platform
+        helps clients discover professionals and book appointments while
+        giving service providers tools to manage their bookings and
+        connect with customers.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Built for better bookings.</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          <h3>Discover</h3>
+          <p>
+            Find barbers and grooming professionals and explore their
+            available services.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Book</h3>
+          <p>
+            Choose a service and appointment time directly through
+            the KLYP platform.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Manage</h3>
+          <p>
+            Keep your appointments and booking information organized
+            in one place.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+
+      <p>
+        General inquiries:
+        <a href="mailto:info@klyp.ca">info@klyp.ca</a>
+      </p>
+
+      <p>
+        Support:
+        <a href="mailto:support@klyp.ca">support@klyp.ca</a>
+      </p>
+
+      <br>
+
+      <p>
+        KLYP is operated by Le Groupe KLYP S.E.N.C.,
+        a registered business in Québec, Canada.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Le Groupe KLYP S.E.N.C. · KLYP
+  </footer>
+
+</body>
+</html>
